@@ -5,15 +5,15 @@ let c=0;
 let round=true;
 
 function computerPlay(){
-  let choose = Math.floor(Math.random() * 100);
+  let choose = Math.floor(Math.random() * 100) +1;
   let dec1 = "rock";
   let dec2 = "paper";
   let dec3 = "scissors"
   let pick;
 
-  if (choose % 3 == 0 || choose % 5 == 0)
+  if (choose % 3 === 0)
     pick = dec1;
-  else if (choose % 2 == 0)
+  else if (choose % 7 == 0 || choose % 5 === 0)
     pick = dec2;
   else
     pick = dec3;
@@ -64,4 +64,8 @@ function game(){
 	console.log("\t\tYOU WINS!!!");
     }
   }
+
+  p = 0;
+  c = 0;
+  round = true;
 }
