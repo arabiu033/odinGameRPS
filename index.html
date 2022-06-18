@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
-  <body></body>
+  <body>
+
+      <div id="title">
+        <h1>ROCK PAPER SCISSORS</h1>
+      </div>
+
+      <div id="board">
+        <div id="innerBoard">
+          <h2>Choose your Weapon!</h2>
+          <p id="count">First to score 5 points wins the game</p>
+          <ul>
+            <li>Score Board:</li>
+            <li>You - </li>
+            <li>Computer - </li>
+          </ul>
+        </div>
+        <p id="msg">...</p>
+
+        <div id="playSection">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <p>Copyright © 2022 michalosman</p>
+      </div>
+
+  </body>
 </html>
